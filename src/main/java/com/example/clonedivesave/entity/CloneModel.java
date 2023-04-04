@@ -21,7 +21,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Entity
-@Table(name = "clone_div_save")
+@Table(name = "clone_div")
 public class CloneModel {
 
   @Id

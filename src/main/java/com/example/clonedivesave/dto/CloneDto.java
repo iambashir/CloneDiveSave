@@ -1,3 +1,4 @@
+/*
 package com.example.clonedivesave.dto;
 
 import javax.persistence.Column;
@@ -26,3 +27,4 @@ public class CloneDto {
   private String range;
 
 }
+*/
