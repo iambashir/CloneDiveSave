@@ -60,51 +60,33 @@
 
 <body>
 <!-- partial:index.partial.html -->
-<!--<div class="property-fields__rows container mt-4">
+<div class="property-fields__rows container mt-4">
   <form id="test-form" action="">
     <div id="property-fields__container">
       <div class="property-fields__row property-fields__row-item">
         <div class="line-item-property__field line-item-property__year">
           <label for="testName">Test Name</label>
-          <input id="testName" type="text" name="testName">
+          <input class="form-control" id="testName" type="text" name="testName">
         </div>
         <div class="line-item-property__field line-item-property__team">
           <label for="resultEntry">Result Entry</label>
-          <input id="resultEntry" type="text" name="resultEntry">
+          <input class="form-control" id="resultEntry" type="text" name="resultEntry">
         </div>
         <div class="line-item-property__field line-item-property__name">
           <label for="normalRange">Normal Range</label>
-          <input id="normalRange" type="text" name="normalRange">
+          <input class="form-control" id="normalRange" type="text" name="normalRange">
         </div>
-        <button type="button" class="remove-row">x</button>
       </div>
     </div>
-    <button type="button" class="add-row">Add Row</button>
-    <button type="submit">Submit</button>
+    <div class="mt-4">
+      <button  type="button" class="btn btn-sm btn-info">Add Row</button>
+      <button class="btn btn-sm btn-success" type="submit" >Submit</button>
+      <button class="btn btn-sm btn-secondary" type="reset" >Reset</button>
+    </div>
+
   </form>
-</div>-->
+</div>
 
-
-  <div class=" container mt-4">
-    <form th:action="@{/save-clone}" th:object="${clone}" method="POST">
-      <div id="">
-        <div class="">
-          <div class="">
-            <label for="testName">Test Name</label>
-            <input id="testName" type="text" name="testName">
-          </div>
-          <div class="">
-            <label for="result">Result Entry</label>
-            <input id="result" type="text" name="result">
-          </div>
-          <div class="">
-            <label for="range">Normal Range</label>
-            <input id="range" type="text" name="range">
-          </div>
-        </div>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
 
 
   </div>
